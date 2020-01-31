@@ -1,0 +1,54 @@
+{% extends "/template.twig" %}
+
+{% block body %}
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-offset-one-fifth is-three-fifths">
+                    <div class="box">
+                        <form action="postInsert.php" method="POST">
+                            <div class="field">
+                                <div class="control">
+                                    <input type="text" class="input" name="post" placeholder="Tweet!">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="control">
+                                    <input type="submit" class="button is-primary" value="Tweet">
+                                </div>
+                            </div>
+                        </form>
+                        <div class="section">
+                            <div class="container">
+                                {% for post in utilities.getPosts() %}
+                                <div class="card">
+                                    <div class="card-content">
+                                        <p class="title">
+                                            {{ post.post }}
+                                        </p>
+                                        <p class="subtitle">
+                                            {{ post.name }} - {{ post.email }}
+                                        </p>
+                                    </div>
+                                    <footer class="card-footer">
+                                        <p class="card-footer-item">
+                                            <a href="#">Follow the user</a>
+                                        </p>
+                                    </footer>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column is-offset-one-third is-one-third">
+                    <div class="field">
+                        <a href="/twitterClone" class="button is-danger is-fullwidth">Log Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock body %}

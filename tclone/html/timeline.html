@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>Timeline</title>
+        <link rel="stylesheet" type="text/css" href="/codedrunk/tclone/css/base.css">
+    </head>
+    <body>
+        <div class="newpost_area">
+          <form action="post.php">
+            <div class="post">
+              <input class="post_input" type="text" id="post" name="post">
+                <button type="submit">投稿</button>
+            </div>
+          </form>
+        </div>
+###loop###
+        <div class="post_info">
+          <div class="user_info"><a href="profile.php?i=%%%id%%%">%%%name%%%</a> said:</div>
+          <div class="post">%%%post%%%</div>
+          <div class="post_date">posted: %%%created_at%%%</div>
+        </div>
+###/loop###
+    </body>
+</html>

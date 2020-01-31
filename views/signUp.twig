@@ -1,0 +1,32 @@
+{% extends "template.twig" %}
+
+{% block body %}
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-offset-one-third is-one-third">
+                    <div class="box">
+                        <div class="field">
+                            <h1>Email Address : </h1>
+                            <h2>{{ confirmVars.email }}</h2>
+                        </div>
+                        <div class="field">
+                            <h1>Password : </h1>
+                            <h2>Not shown for security</h2>
+                        </div>
+                        <div class="field">
+                            <h1>Name : </h1>
+                            <h2>{{ confirmVars.name }}</h2>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <a href="./signUpHandling.php" class="button is-primary is-fullwidth">Sign Up</a>
+                    </div>
+                    <div class="field">
+                        <a href="/twitterClone" class="button is-info is-fullwidth">Back</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock body %}

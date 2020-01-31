@@ -1,0 +1,92 @@
+{% extends "template.twig" %}
+
+{% block body %}
+<section class="section is-medium">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-one-third is-offset-one-third">
+                <dib class="field">
+                    <div class="has-text-danger has-text-centered">
+                        {{ error.message }}
+                    </div>
+                </dib>
+                <div class="field">
+                    <button class="button is-primary is-fullwidth is-large" id="login">Login</button>
+                </div>
+                <div class="field">
+                    <button class="button is-info is-fullwidth is-large" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+        <!-- log in screen -->
+        <div class="modal" id="modal-login">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <form action="./public/loginHandling.php" method="post">
+                    <div class="modal-card-head">
+                        Login
+                    </div>
+                    <div class="modal-card-body">
+                        <div class="columns">
+                            <div class="column is-offset-one-fifth is-three-fifths">
+                                <div class="field">
+                                    <div class="control">
+                                        <input type="text" id="account" name="email" class="input" placeholder="Email Address" required>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="control">
+                                        <input type="password" name="password" class="input" placeholder="Password" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-card-foot">
+                        <div class="field">
+                            <button type="submit" class="button is-primary">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- sign up screen -->
+        <div class="modal" id="modal-signUp">
+            <div class="modal-background"></div>
+            <modal-card>
+                <div class="modal-card">
+                    <form action="./public/signUp.php" method="POST">
+                        <div class="modal-card-head">Sign Up</div>
+                        <div class="modal-card-body">
+                            <div class="columns">
+                                <div class="column is-offset-one-fifth is-three-fifths">
+                                    <div class="field">
+                                        <div class="control">
+                                            <input type="text" id="account" name="email" class="input" placeholder="Email Address" required>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="control">
+                                            <input type="password" name="password" class="input" placeholder="Password" required>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="control">
+                                            <input type="text" class="input" name="name" placeholder="Name" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-card-foot">
+                            <div class="field">
+                                <button type="submit" class="button is-primary">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </modal-card>
+        </div>
+    </div>
+</section>
+{% endblock body %}

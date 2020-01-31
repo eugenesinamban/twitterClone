@@ -1,0 +1,102 @@
+body
+{
+    background-color: darkslategrey;
+}
+
+div.post_info
+{
+    margin: 16px 0;
+    color: aliceblue;
+}
+div.post,div.post_self
+{
+    padding: 0 10px;
+    width: auto;
+    height: auto;
+    border: 0.5px solid;
+    border-radius: 5px;
+    background-color: azure;
+    color: black;
+}
+
+div.post_self
+{
+    background-color: aqua;
+}
+
+div.title_area
+{
+    color: floralwhite;
+}
+
+div.message_area
+{
+    color: crimson;
+}
+
+div.form_area ul
+{
+    list-style: none;   
+}
+
+div.form_area li > div.form_label
+{
+    width: 33%;
+    float: left;
+  
+    color: floralwhite;
+}
+
+div.form_area div.button_area
+{
+    text-align: center;
+}
+
+div.table_area table{
+  border: 1px solid;
+  border-color: crimson;
+  border-collapse: collapse;
+}
+
+div.table_area tr:nth-child(even){
+  background-color: darkgrey;
+}
+
+div.table_area tr:hover{
+  background-color: coral;
+}
+
+div.table_area td:hover{
+  color: white;
+  background-color: crimson;
+}
+
+div.table_area th{
+  border: 1px solid;
+  padding: 5px;
+  background-color: aqua;
+}
+
+div.table_area td{
+  border: 1px solid;
+  padding: 5px;
+}
+
+div.post input.post_input{
+  border: none;
+  background-color: azure;
+  outline: none;
+  width: 100%;
+}
+
+div.post button{
+  display: inline;
+  text-align: right;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>ユーザーログイン</title>
+        <link rel="stylesheet" type="text/css" href="/codedrunk/tclone/css/base.css">
+    </head>
+    <body>
+        <div class="title_area">
+            <p>ログイン</p>
+        </div>
+        <div class="message_area">
+        </div>
+        <div class="form_area">
+            <form action="auth.php">
+                <ul>
+                    <li>
+                        <div class="form_label">
+                            <label for="account">アカウント名</label>
+                        </div>
+                        <div class="form_item">
+                            <input type="text" id="account" name="account">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form_label">
+                            <label for="password">パスワード</label>
+                        </div>
+                        <div class="form_item">
+                            <input type="password" id="password" name="password">
+                        </div>
+                    </li>
+                </ul>
+                <div class="button_area">
+                    <button type="submit">ログイン</button>
+                </div>
+            </form>
+            <div class="link_area">
+                <a href="mail_regist.php">新規ユーザー登録</a>
+            </div>
+        </div>
+    </body>
+</html>
