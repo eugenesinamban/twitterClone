@@ -6973,5 +6973,12 @@ label.panel-block {
       padding: 18rem 1.5rem; } }
 
 .footer {
-  background-color: #fafafa;
+  background-color: rgba(255, 255, 255, 0.3);
   padding: 3rem 1.5rem 6rem; }
+
+html {
+  background: url(/twitterClone/images/banner.jpg) no-repeat;
+  background-size: cover; }
+
+.menu {
+  position: fixed; }

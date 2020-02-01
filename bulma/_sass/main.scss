@@ -25,5 +25,16 @@ $primary-invert: $pink-invert;
 
 // 4. Import the rest of Bulma
 */
+$footer-background-color: rgba(255,255,255,0.3);
+
 
 @import "../node_modules/bulma/bulma";
+
+html {
+    background: url(/twitterClone/images/banner.jpg) no-repeat;
+    background-size: cover;
+}
+
+.menu {
+    position: fixed;
+}
