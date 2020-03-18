@@ -25,7 +25,7 @@ $primary-invert: $pink-invert;
 
 // 4. Import the rest of Bulma
 */
-$footer-background-color: rgba(255,255,255,0.3);
+$footer-background-color: none;
 
 
 @import "../node_modules/bulma/bulma";
@@ -35,6 +35,14 @@ html {
     background-size: cover;
 }
 
-.menu {
-    position: fixed;
+#footer {
+
+    background-color: rgba(255,255,255,0.3);
+
+}
+
+#menu {
+    // position: fixed;
+    // top: 0;
+    // width: 100%;
 }
